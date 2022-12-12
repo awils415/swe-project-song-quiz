@@ -251,7 +251,7 @@ class Select extends React.Component {
                     searchUpdate={(e) => this.setState({ query: e.target.value })}
                     typeUpdate={(e) =>
                     this.setState((state) => ({
-                        type: [...state.type, e.target.value],
+                        type: [state.type, e.target.value],
                     }))
                     }
                     searchFunc={() => this.spotifySearchData()}
@@ -311,7 +311,7 @@ class Select extends React.Component {
             }
 
 
-            </div>] : <div className="frontContainer"> <div id= "Neon"> SONG SAVANT</div>  <div id= "desc"> how well do you know your music?</div><button id="signIn" onClick={() => {
+            </div>] : <div className="frontContainer"> <div id= "Neon"> GUESS THAT TUNE</div>  <div id= "desc"> how well do you know your music?</div><button id="signIn" onClick={() => {
             window.location = window.location.href.includes('localhost')
               ? 'http://localhost:8888/login'
               : 'https://song-savant.herokuapp.com/login' }
